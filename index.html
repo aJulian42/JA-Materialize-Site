@@ -1,0 +1,235 @@
+<!-- This code is referenced from a template in the following website:
+=================http://materializecss.com/getting-started.html======== -->
+<!-- The code here is going to be created for the use of the
+Augmented Reality Tour Guide App. We will be using Materialize 
+as it will speed up the learning needed to create a site. 
+========================================================= -->
+<!--The initial objective is to create an Administative
+page to update and communicate with the app and user.
+============================================================ -->
+<!-- Web setup 
+============================================================ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Let browser know website is optimized for mobile-->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Title -->
+    <title>AR Tour Guide</title>
+    <!-- Materialize Setup 
+    ======================================================== -->
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ==================================================== -->
+</head>
+
+<body>
+    <!-- This section is for the first part of the design with a background picture.
+ ================================================================================= -->
+    <!-- Navigation area has a blue-gray colored background. -->
+    <nav class="white" role="navigation">
+        <!-- Nav bar with logo and brand link. -->
+        <div class="nav-wrapper container">
+            <!-- Logo reference. -->
+            <a id="logo-container" href="#" class="brand-logo">Logo</a>
+            <!-- Hidden for tablet and below. -->
+            <ul class="right hide-on-med-and-down">
+                <!-- Brand link. -->
+                <li><a href="#">Navbar Link</a></li>
+            </ul>
+            <!-- Nav Bar preferences to be at the side and set as a navigation bar. -->
+            <ul id="nav-mobile" class="side-nav">
+                <li><a href="#">Navbar Link</a></li>
+            </ul>
+            <!-- ul is set in navi with a collapsed button from a regular-sized google material icon. -->
+            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+        </div>
+    </nav>
+    <!-- Effect of image is moved at a different speed than the foreground content while scrolling. -->
+    <div id="index-banner" class="parallax-container">
+        <!-- Sets layout for the container. -->
+        <div class="section no-pad-bot">
+            <!-- Container -->
+            <div class="container">
+                <br>
+                <br>
+                <!-- Title of the Site. -->
+                <h1 class="header center teal-text text-lighten-2">Augmented Reality Tour Guide </h1>
+                <!-- Centered Alignment. -->
+                <div class="row center">
+                    <!-- Header to explain ARTG. -->
+                    <h5 class="header col s12 light">A modern way to tour our university. </h5>
+                </div>
+                <!-- Button at center row with a wave effect. -->
+                <div class="row center">
+                    <!-- This is where the button takes to another html file to switch web pages. -->
+                    <a href="login.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Let's Go!!</a>
+                </div>
+                <br>
+                <br>
+            </div>
+        </div>
+        <!-- This gives the different speed effect for the image versus the foreground when scrolling. -->
+        <div class="parallax"><img src="background1.jpg" alt="background1.jpg"></div>
+    </div>
+    <!-- Container adds content to the div. -->
+    <div class="container">
+        <div class="section">
+            <!--   Icon Section  
+            ============================================================================================================= -->
+            <!-- Row specifies a padding-less container to be used for responsive columns. This class is mandatory for responsive classes to be fully responsive.-->
+            <div class="row">
+                <!-- s12 defines 12 of 12 columns with width as 100%. Default class for small screen phones. m4 Defines 4 of 12
+            columns with width as 33.33%.-->
+                <div class="col s12 m4">
+                    <!-- Prepares for Icon Setup. -->
+                    <div class="icon-block">
+                        <!-- Uses a Navigation Icon in brown color. -->
+                        <h2 class="center brown-text"><i class="material-icons">navigation</i></h2>
+                        <!-- Title for the navigation Icon. -->
+                        <h5 class="center">Ease of Navigation</h5>
+                        <!-- Explanation of the navigation section. -->
+                        <p class="light">We assist with the guidance of our mobile app. The added features make it easy and stress free to find the location that is being searched.</p>
+                    </div>
+                </div>
+                <!-- s12 defines 12 of 12 columns with width as 100%. Default class for small screen phones. m4 Defines 4 of 12
+            columns with width as 33.33%.-->
+                <div class="col s12 m4">
+                    <!-- Prepares for Icon Setup. -->
+                    <div class="icon-block">
+                        <!-- Uses a Group Icon in brown color. -->
+                        <h2 class="center brown-text"><i class="material-icons">group</i></h2>
+                        <!-- Title for the Group Icon. -->
+                        <h5 class="center">User Experience Focused</h5>
+                        <!-- Explanation of the Group section. -->
+                        <p class="light">The use of Augmented Reality provides a compelling environment for the user. It stimulates motor and mental activity for an enriched visitor engagement.</p>
+                    </div>
+                </div>
+                <!-- s12 defines 12 of 12 columns with width as 100%. Default class for small screen phones. m4 Defines 4 of 12
+            columns with width as 33.33%.-->
+                <div class="col s12 m4">
+                    <!-- Prepares for Icon Setup. -->
+                    <div class="icon-block">
+                        <!-- Uses a Settings Icon in brown color. -->
+                        <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
+                        <!-- Title for the Settings Icon. -->
+                        <h5 class="center">Easy to work with</h5>
+                        <!-- Explanation of the Settings section. -->
+                        <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- This is the next background picture section for Contact info. 
+    ==========================================================================================================-->
+    <!-- This will create a vertical alignment with the foreground speed effect when scrolling. -->
+    <div class="parallax-container valign-wrapper">
+        <!-- Sets layout for the container. -->
+        <div class="section no-pad-bot">
+            <!-- Container adds content to the div. -->
+            <div class="container">
+                <!-- Button at center row with a wave effect. -->
+                <div class="row center">
+                    <!-- Header to explain ARTG. -->
+                    <h5 class="header col s12 light"> AR is suited for the needs of tourism enriched by the real-world with interactive virtual information</h5>
+                </div>
+            </div>
+        </div>
+        <!-- This gives the different speed effect for the image versus the foreground when scrolling. -->
+        <div class="parallax"><img src="background2.jpg" alt="Unsplashed background img 2"></div>
+    </div>
+    <!-- Container adds content to the div. -->
+    <div class="container">
+        <div class="section">
+            <div class="row">
+                <!-- s12 defines 12 of 12 columns with width as 100%. Default class for small screen phones. Centered -->
+                <div class="col s12 center">
+                    <!-- Material Design Icon with brown text for setup feature. -->
+                    <h3><i class="mdi-content-send brown-text"></i></h3>
+                    <!-- Text -->
+                    <h4>Contact Us</h4>
+                    <!-- Contact Info -->
+                    <p class="left-align light">You can contact us anytime, anywhere. Brandon's info is ...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Last section before the Bio section. 
+    =======================================================================================================-->
+    <!-- This will create a vertical alignment with the foreground speed effect when scrolling. -->
+    <div class="parallax-container valign-wrapper">
+        <!-- Sets layout for the container. -->
+        <div class="section no-pad-bot">
+            <!-- Container adds content to the div. -->
+            <div class="container">
+                <!-- Button at center row with a wave effect. -->
+                <div class="row center">
+                    <!-- This is the final header for the site. -->
+                    <h5 class="header col s12 light">Make your tour as interactive as you would like it to be. </h5>
+                </div>
+            </div>
+        </div>
+        <!-- This is a building image for use of the webpage. -->
+        <div class="parallax"><img src="background3.jpg" alt="Unsplashed background img 3"></div>
+    </div>
+    <!-- =====================================================================================
+    This is the Footer area at the bottom of the web page. -->
+    <footer class="page-footer teal">
+        <!-- Container adds content to the div. -->
+        <div class="container">
+            <!-- Specifies a padding-less container to be used for responsive columns. This class is mandatory for responsive 
+        classes to be fully responsive. -->
+            <div class="row">
+                <!-- Extends Column 100%. -->
+                <div class="col l6 s12">
+                    <!-- This is a white header with the text "Company Bio". -->
+                    <h5 class="white-text">Company Bio</h5>
+                    <!-- This is a small explanation of the company. -->
+                    <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+                </div>
+                <!-- Extends Column 100%. -->
+                <div class="col l3 s12">
+                    <!-- This is a Settings template. -->
+                    <h5 class="white-text">Settings</h5>
+                    <ul>
+                        <!-- These are setup to go to a link if needed. -->
+                        <li><a class="white-text" href="#!">Link 1</a></li>
+                        <li><a class="white-text" href="#!">Link 2</a></li>
+                        <li><a class="white-text" href="#!">Link 3</a></li>
+                        <li><a class="white-text" href="#!">Link 4</a></li>
+                    </ul>
+                </div>
+                <!-- Extends Column 100%. -->
+                <div class="col l3 s12">
+                    <!-- This is a header for Connect. -->
+                    <h5 class="white-text">Connect</h5>
+                    <ul>
+                        <!-- These are setup to go to a link if needed. -->
+                        <li><a class="white-text" href="#!">Link 1</a></li>
+                        <li><a class="white-text" href="#!">Link 2</a></li>
+                        <li><a class="white-text" href="#!">Link 3</a></li>
+                        <li><a class="white-text" href="#!">Link 4</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--Import jQuery before materialize.js
+    ==========================================================================================-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+    // Intitialize parallax javascript effect using jQuery on page load.
+    $(document).ready(function() {
+        $('.parallax').parallax();
+    });
+    </script>
+</body>
+
+</html>
